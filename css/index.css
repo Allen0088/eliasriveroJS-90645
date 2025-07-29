@@ -1,0 +1,172 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+header{
+    width: auto;
+    height: auto;
+    background-color: aquamarine;
+    display: flex;
+}
+
+
+
+header .tittle{
+    font-size: 20px; 
+    justify-content: center;
+    padding-left: 1200px;
+    padding-top: 30px;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-left: 20px;
+}
+
+body{
+    background-color: rgb(220, 255, 242);
+}
+
+.userW{
+    padding: 20px;
+}
+
+.dominio{
+    padding-top: 75px;
+    display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.item{
+    font-size: 50px
+}
+.item1{
+    font-size: 30px;
+}
+
+.contenedor-info{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.plata{
+    object-fit: contain;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    left: 520px;
+    bottom: 260px;
+}
+
+.card-uno{
+    width: 1000px;
+    height: 700px;
+    border-radius: 5px;
+    background-color: aquamarine;
+}
+
+.info-pp{
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+    width: 400px;
+    height: 300px;
+}
+
+.info-nombre{
+    font-size: 18px;
+    width: 250px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.info-dni{
+    font-size: 18px;
+    width: 250px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.info-correo{
+    font-size: 18px;
+    width: 250px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.enviar{
+    width: 250px;
+    margin: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    height: 30px;
+}
+
+.titulo-medio-dos{
+    background-color: rgb(253, 253, 253);
+    color: rgb(116, 114, 114);
+    width: 900px;
+    font-size: 22px;
+    position: relative;
+    bottom: 320px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: rgb(117, 117, 117) 2px 2px 2px 2px;
+}
+
+
+.objetivo{
+    position: relative;
+    bottom: 370px;
+    left: 500px;
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+
+.tabla{
+    display: flex;
+    position: relative;
+    bottom: 300px;
+    left: 500px;
+    background-color: white;
+    width: 235px;
+    height: 190px;
+    border-radius: 5px;
+}
+
+.tabla h1{
+    padding: 10px;
+font-size: 18px;
+}
+
+.contenido-euro{
+    display: flex;
+    position: relative;
+    left: 495px;
+    bottom: 470px;
+}
+
+.contenido-euro p{
+    margin: 25px;
+}
+
+
+.contenido-dolar{
+    display: flex;
+    position: relative;
+    left: 495px;
+    bottom: 490px;
+}
+
+.contenido-dolar p{
+margin: 25px;
+}

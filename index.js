@@ -7,73 +7,94 @@ const manejo_dolar = [
 
 
 
-function operacion(pregunta, moneda){
-    switch(pregunta){
-        case "compra":
-            compra(moneda);
-            break;
-        case "venta":
-            ventas(moneda);
-        break;
-        default:
-            inicio()
-    }
+// function operacion(pregunta, moneda){
+//     switch(pregunta){
+//         case "compra":
+//             compra(moneda);
+//             break;
+//         case "venta":
+//             venta(moneda);
+//         break;
+//         default:
+//             inicio()
+//     }
+// }
+
+// function operacion2(siguiente1){
+//     switch(siguiente1){
+//         case "dolar":
+//         inicio2(manejo_dolar[0]);
+//         break;
+//         case "euro":
+//         inicio3(manejo_dolar[1])
+//         break;
+//         default:
+//             inicio()
+//     }
+// }
+
+// function inicio2(moneda){
+//     let pregunta = prompt(`que queres hacer:
+//         compra
+//         venta
+//         `).toLowerCase();
+// operacion(pregunta, moneda)
+// }
+
+// function inicio3(moneda){
+//     let pregunta = prompt(`que queres hacer:
+//         compra
+//         venta
+//         `).toLowerCase();
+// operacion(pregunta, moneda);
+// }
+
+
+// function compra(moneda){
+//     let cantidad = Number(prompt("cuantos vas a comprar?"))
+//     let contenido = moneda.compra * cantidad
+//     alert("debes pagar: $" + contenido)
+// }
+
+// function venta(moneda){
+// let cantidad = Number(prompt("cuanto vas a vender?"))
+// let contenido = moneda.venta * cantidad
+// alert ("te daremos: $"+ contenido)
+// }
+
+// function inicio (){
+// let siguiente1= prompt(`elige la moneda:
+//     dolar
+//     euro
+//     `).toLowerCase();
+
+
+// operacion2(siguiente1)
+// }
+
+
+
+// inicio()
+
+
+let nameUser;
+let dni;
+let correo;
+
+let nombrem = document.querySelector(".userW");
+
+document.querySelector(".enviar").onclick = () => {
+nameUser = document.querySelector(".info-nombre").value;
+dni= document.querySelector(".info-dni").value;
+correo= document.querySelector(".info-correo").value;
+
+localStorage.setItem("nameUser", nameUser)
+nombrem.innerHTML = `<p>Hola, ${nameUser} !</p>` ;
 }
 
-function operacion2(siguiente1){
-    switch(siguiente1){
-        case "dolar":
-        inicio2(manejo_dolar[0]);
-        break;
-        case "euro":
-        inicio3(manejo_dolar[1])
-        break;
-        default:
-            inicio()
-    }
+const bro = localStorage.getItem("nameUser");
+
+if(bro){
+    nombrem.innerHTML = `<p> Hola, ${bro} !</p>`;
 }
-
-function inicio2(moneda){
-    let pregunta = prompt(`que queres hacer:
-        compra
-        venta
-        `).toLowerCase();
-operacion(pregunta, moneda)
-}
-
-function inicio3(moneda){
-    let pregunta = prompt(`que queres hacer:
-        compra
-        venta
-        `).toLowerCase();
-operacion(pregunta, moneda);
-}
-
-
-function compra(moneda){
-    let cantidad = Number(prompt("cuantos vas a comprar?"))
-    let contenido = moneda.compra * cantidad
-    alert("debes pagar: $" + contenido)
-}
-
-function venta(moneda){
-let cantidad = Number(prompt("cuanto vas a vender?"))
-let contenido = moneda.venta * cantidad
-alert ("te daremos: $"+ contenido)
-}
-
-function inicio (){
-let siguiente1= prompt(`elige la moneda:
-    dolar
-    euro
-    `).toLowerCase();
-
-
-operacion2(siguiente1)
-}
-
-
-
-inicio()
-
 
