@@ -135,7 +135,7 @@ align-items: center;
 .tabla{
     display: flex;
     position: relative;
-    bottom: 300px;
+    bottom: 315px;
     left: 500px;
     background-color: white;
     width: 235px;
@@ -169,4 +169,22 @@ font-size: 18px;
 
 .contenido-dolar p{
 margin: 25px;
+}
+
+.info-cantidad{
+width: 250px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.eleccion{
+    position: relative;
+bottom: 399px;
+left: 800px;
+}
+
+.total{
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
 }

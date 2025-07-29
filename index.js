@@ -3,10 +3,6 @@ const manejo_dolar = [
     {moneda: "euro", compra: 1480, venta: 1350,}
 ];
 
-
-
-
-
 // function operacion(pregunta, moneda){
 //     switch(pregunta){
 //         case "compra":
@@ -95,6 +91,25 @@ nombrem.innerHTML = `<p>Hola, ${nameUser} !</p>` ;
 const bro = localStorage.getItem("nameUser");
 
 if(bro){
-    nombrem.innerHTML = `<p> Hola, ${bro} !</p>`;
+nombrem.innerHTML = `<p> Hola, ${bro} !</p>`;
+}
+
+let money = document.querySelector(".objetivo") ;
+let cantidad = document.querySelector(".info-cantidad");
+let total = document.querySelector(".total");
+
+function seleccion (){
+let monedita = money.value;
+let cuanto = Number(cantidad.value);
+
+if (money.value === manejo_dolar[0].moneda) {
+let resultado = Number(cantidad.value) * manejo_dolar[0].compra;
+total.value = resultado.toFixed(2);
+} else if (money.value === manejo_dolar[1].moneda) {
+let resultado = Number(cantidad.value) *manejo_dolar[1].compra;
+total.value = resultado.toFixed(2);
+} else {
+total.value = "No hay nd";
+}
 }
 
